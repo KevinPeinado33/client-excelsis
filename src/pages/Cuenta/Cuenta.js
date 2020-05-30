@@ -16,7 +16,7 @@ const Cuenta = () => {
     }, []);
 
     // mostramos el loading de nuestra aplicacion
-    if (login === null) return <Loading />;
+    if (login === null) return <Loading isVisible="loading"/>;
 
     return login ? <Redirect to="/dashboard" /> : <Redirect to="/iniciar-sesion"/>;
 }

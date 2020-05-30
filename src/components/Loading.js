@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Loading = () => {
+const Loading = ({isVisible}) => {
     return(
-        <div className="loading">Loading&#8230;</div>
+        <div className={isVisible}></div>
     )
 }
 
