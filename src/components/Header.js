@@ -24,18 +24,18 @@ const Header = () => {
                                 <i className="material-icons">apps</i> Mas Opciones
                             </a>
                             <div className="dropdown-menu dropdown-with-icons">
-                                <a href="!#" className="dropdown-item">
+                                <Link to={'/publicaciones-noticias'} className="dropdown-item">
                                     <i className="material-icons">live_tv</i> Noticias
-                                </a>
-                                <a href="https://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html" className="dropdown-item">
+                                </Link>
+                                <Link to={'/album-fotos'} className="dropdown-item">
                                     <i className="material-icons">perm_media</i> Album De Fotos
-                                </a>
+                                </Link>
                             </div>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="!#">
+                            <Link to={'/contactanos'} className="nav-link">
                                 <i className="material-icons">contacts</i> Contáctanos
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
                             <Link to={'/login'} className="nav-link" >

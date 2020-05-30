@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import * as firebase from 'firebase';
 
 const Dashboard = () => {
+
+    useEffect(() => {
+        document.title = "Excelsis | Dashboard";
+    });
+    
     return(
         <>
         <p>Dashboard...!!</p>

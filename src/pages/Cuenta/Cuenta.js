@@ -9,13 +9,13 @@ const Cuenta = () => {
     const [login, setLogin] = useState(null);
 
     useEffect(() => {
+        document.title = "Validando..";
         firebase.auth().onAuthStateChanged((user) => {
             !user ? setLogin(false) : setLogin(true);
         });        
         // eslint-disable-next-line
     }, []);
 
-    // mostramos el loading de nuestra aplicacion
     if (login === null) return <Loading isVisible="loading"/>;
 
     return login ? <Redirect to="/dashboard" /> : <Redirect to="/iniciar-sesion"/>;

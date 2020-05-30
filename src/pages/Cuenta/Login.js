@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -12,15 +12,20 @@ const Login = () => {
     const [mensaje, setMensaje] = useState('');
     const [loading, setLoading] = useState('');
 
+    useEffect(() => {
+        document.title = "Excelsis | Login";
+    });
+
     const cambiarEstado = (estado, msg) => {
         setVisible(estado);
         setMensaje(msg);
     }
 
+
     return (
-        <>
+        <div className="login-page sidebar-collapse">
             <Header />
-            <div className="page-header header-filter">
+            <div className="page-header header-filter imagen-atras">
                 <div className="container">
 
                     { visible ? <Alert type="alert-danger" msg={mensaje} icon="error_outline" /> : null}
@@ -43,7 +48,7 @@ const Login = () => {
             </div>
             <Loading isVisible={loading}/>
             <Footer />
-        </>
+        </div>
     )
 }
 
