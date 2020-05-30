@@ -7,9 +7,9 @@ const Header = () => {
         <nav className="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
             <div className="container">
                 <div className="navbar-translate">
-                    <a className="navbar-brand" href="!#">
+                    <Link to={'/'} className="navbar-brand">
                         <img src="https://i.ibb.co/Jm7Xmjs/foto-loguito.png" className="img-logo-principal" alt="img-logo"/>    
-                    </a>
+                    </Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="sr-only">Toggle navigation</span>
                         <span className="navbar-toggler-icon"></span>
