@@ -2,7 +2,7 @@ import React from 'react';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import ContactoForm from '../components/ContactoForm';
+import Contacto from '../components/Contacto/Contacto';
 
 const Contactanos = () => {
     return (
@@ -13,12 +13,12 @@ const Contactanos = () => {
                 <div className="profile-content">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-6 ml-auto mr-auto">
-                                <div class="profile">
-                                        <div class="name" style={{marginTop:20}}>
-                                            <h2 class="title">Contáctanos</h2>
-                                            <ContactoForm />
+                            <div className="col-md-12 ml-auto mr-auto">
+                                <div className="profile">
+                                        <div className="name" style={{marginTop:20}}>
+                                            <h2 className="title">Contáctanos</h2>
                                         </div>
+                                        <Contacto />
                                     </div>
                                 </div>
                             </div>
