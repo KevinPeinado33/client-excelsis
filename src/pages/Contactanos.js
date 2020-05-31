@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Contacto from '../components/Contacto/Contacto';
 
 const Contactanos = () => {
+
+    useEffect(() => {
+        document.title = "Excelsis | Contáctanos"
+    }, []);
+
     return (
         <div className="profile-page sidebar-collapse">
             <Header />

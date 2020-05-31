@@ -20,9 +20,9 @@ const Dashboard = () => {
         // eslint-disable-next-line
     }, []);
 
-    if(autenticacion === null) return <Loading isVisible="loading"/>;
+    if (autenticacion === null) return <Loading isVisible="loading" />;
 
-    if(autenticacion === false) return <Redirect to={'/login'} />
+    if (autenticacion === false) return <Redirect to={'/login'} />
 
     const cerrarSesion = () => {
         firebase.auth().signOut();
@@ -41,7 +41,8 @@ const Dashboard = () => {
                             </ol>
                         </nav>
                         <h2 className="title">Dashboard</h2>
-                        <button className="btn btn-danger" onClick={() => cerrarSesion()}>Cerrar Sesion</button></div>
+                        <button className="btn btn-danger" onClick={() => cerrarSesion()}>Cerrar Sesion</button>
+                    </div>
                 </div>
             </div>
         </div>

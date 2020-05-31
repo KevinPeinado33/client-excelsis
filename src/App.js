@@ -10,6 +10,7 @@ import Dashboard from './pages/Dashboard';
 import Contactanos from './pages/Contactanos';
 import Noticias from './pages/Noticias';
 import AlbumFotos from './pages/AlbumFotos';
+import Interesados from './pages/Interesados';
 
 import './utils/firebase';
 
@@ -20,10 +21,12 @@ function App() {
         <Route exact path="/" component={Principal} />
         <Route exact path="/login" component={Cuenta} />
         <Route exact path="/iniciar-sesion" component={Login} />
-        <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/contactanos" component={Contactanos} />
         <Route exact path="/publicaciones-noticias" component={Noticias} />
         <Route exact path="/album-fotos" component={AlbumFotos} />
+
+        <Route exact path="/dashboard" component={Dashboard} />
+        <Route exact path="/personas-interesadas" component={Interesados} />
         <Route exact component={() => {
           return (
             <h1>Error 404</h1>

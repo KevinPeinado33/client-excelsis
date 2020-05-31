@@ -21,11 +21,14 @@ const NavBar = () => {
                     <ul className="navbar-nav ml-auto">
                         <li className="dropdown nav-item">
                             <a href="!#" className="dropdown-toggle nav-link" data-toggle="dropdown">
-                                <i className="material-icons">apps</i> Mas Opciones
+                                <i className="material-icons">dashboard</i> Mas Opciones
                             </a>
                             <div className="dropdown-menu dropdown-with-icons">
-                                <Link to={'/publicaciones-noticias'} className="dropdown-item">
-                                    <i className="material-icons">live_tv</i> Noticias
+                                <Link to={'/dashboard'} className="dropdown-item">
+                                    <i className="material-icons">home</i> Dashboard
+                                </Link>
+                                <Link to={'/personas-interesadas'} className="dropdown-item">
+                                    <i className="material-icons">forum</i> Interesados
                                 </Link>
                                 <Link to={'/album-fotos'} className="dropdown-item">
                                     <i className="material-icons">perm_media</i> Album De Fotos
@@ -34,14 +37,15 @@ const NavBar = () => {
                         </li>
                         <li className="nav-item">
                             <Link to={'/contactanos'} className="nav-link">
-                                <i className="material-icons">contacts</i> Contáctanos
+                                <i className="material-icons">supervisor_account</i> Usuarios
                             </Link>
                         </li>
                         <li className="nav-item">
                             <Link to={'/login'} className="nav-link" >
-                                <i className="material-icons">settings</i> Administrador
+                                <i className="material-icons">account_circle</i> Perfil
                             </Link>
                         </li>
+                        {/**
                         <li className="nav-item">
                             <a className="nav-link" rel="noopener noreferrer" data-placement="bottom" href="https://www.facebook.com/C.Excelsis" target="_blank" data-original-title="Like us on Facebook">
                                 <i className="fa fa-facebook-square"></i>
@@ -52,6 +56,7 @@ const NavBar = () => {
                                 <i className="fa fa-youtube"></i>
                             </a>
                         </li>
+                        */}
                     </ul>
                 </div>
             </div>
