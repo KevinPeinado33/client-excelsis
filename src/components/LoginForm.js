@@ -31,6 +31,8 @@ const LoginForm = ({ cambiarEstado, setLoading }) => {
                 }).catch(() => {
                     setLoading('');
                     cambiarEstado(true, "Correo Electronico o Contraseña Incorrectos, Intentelo De nuevo");
+                    setEmail('');
+                    setPassword('');
                 })
         }
     }
@@ -48,7 +50,7 @@ const LoginForm = ({ cambiarEstado, setLoading }) => {
                         type="email" 
                         className="form-control" 
                         placeholder="Correo Electronico"
-                        name="email"
+                        value={email}
                         onChange={e => setEmail(e.target.value)} />
                 </div>
                 <div className="input-group">
@@ -61,6 +63,7 @@ const LoginForm = ({ cambiarEstado, setLoading }) => {
                         type="password" 
                         className="form-control" 
                         placeholder="Contraseña" 
+                        value={password}
                         onChange={e => setPassword(e.target.value)} />
                 </div>
             </div>

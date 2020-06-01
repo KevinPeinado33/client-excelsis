@@ -32,7 +32,7 @@ const Interesados = () => {
                     <div className="section">
                         <nav aria-label="breadcrumb" role="navigation">
                             <ol className="breadcrumb">
-                                <li className="breadcrumb-item"><Link to={'/dashboard'}>Dashboard</Link></li>
+                                <li className="breadcrumb-item"><Link to={'/dashboard'}>Home</Link></li>
                                 <li className="breadcrumb-item active" >Interesados</li>
                             </ol>
                         </nav>

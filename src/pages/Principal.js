@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 const Principal = () => {
 
     useEffect(() => {
-        document.title = "Home | Home"
+        document.title = "Excelsis | Home"
     }, []);
     
     return (

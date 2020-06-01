@@ -11,6 +11,8 @@ import Contactanos from './pages/Contactanos';
 import Noticias from './pages/Noticias';
 import AlbumFotos from './pages/AlbumFotos';
 import Interesados from './pages/Interesados';
+import Usuarios from './pages/Cuenta/Usuarios';
+import RegistrarUsuarios from './pages/Cuenta/RegistrarUsuario';
 
 import './utils/firebase';
 
@@ -27,6 +29,8 @@ function App() {
 
         <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/personas-interesadas" component={Interesados} />
+        <Route exact path="/usuarios-registrados" component={Usuarios} />
+        <Route exact path="/registrar-nuevo-usuario" component={RegistrarUsuarios} />
         <Route exact component={() => {
           return (
             <h1>Error 404</h1>

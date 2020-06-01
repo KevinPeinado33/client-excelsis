@@ -36,7 +36,7 @@ const NavBar = () => {
                             </div>
                         </li>
                         <li className="nav-item">
-                            <Link to={'/contactanos'} className="nav-link">
+                            <Link to={'/usuarios-registrados'} className="nav-link">
                                 <i className="material-icons">supervisor_account</i> Usuarios
                             </Link>
                         </li>

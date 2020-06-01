@@ -20,7 +20,7 @@ const ContactoForm = () => {
 
             <div className="row">
                 <div className="col-md-12">
-                    <div className="form-group mb-5">
+                    <div className="form-group mb-4">
                         <div className="input-group">
                             <div className="input-group-prepend">
                                 <span className="input-group-text">
@@ -42,12 +42,7 @@ const ContactoForm = () => {
                                     <i className="material-icons">account_balance</i>
                                 </span>
                             </div>
-                            <select className="form-control selectpicker">
-                                <option selected disabled>Selecciona El Nivel</option>
-                                <option>Inicial</option>
-                                <option>Primaria</option>
-                                <option>Secundaria</option>
-                            </select>
+                            <textarea class="form-control" placeholder="Descripción De Su Problema o Necesidad" rows="4" />
                         </div>
                     </div>
                 </div>

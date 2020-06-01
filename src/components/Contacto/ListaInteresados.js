@@ -15,8 +15,9 @@ const ListaInteresados = () => {
                 <div id="collapseOne" className="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div className="card-body">
                         <p>
-                            <strong>#. Telefono: </strong> 923966203<br />
-                            <strong>Motivo: </strong> Queria saber donde puedo recoger la libreta de mi hijo, ese csmr no me quiere decir nada, es bien vago ese pendejo aiuda.<br />
+                            <strong><i className="material-icons">date_range</i></strong> 01/06/2020<br />
+                            <strong><i className="material-icons">settings_phone</i></strong> 923966203<br />
+                            <strong><i className="material-icons">description</i></strong> Queria saber donde puedo recoger la libreta de mi hijo, ese csmr no me quiere decir nada, es bien vago ese pendejo aiuda.<br />
                         </p>
 
                         <button className="btn btn-rose"><i className="material-icons">done_all</i> Marcar Como Atendido</button>

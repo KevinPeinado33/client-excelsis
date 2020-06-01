@@ -15,6 +15,14 @@
   background-image: url('https://cdn.www.gob.pe/uploads/document/file/670913/standard_coleigopublico30.jpg');
 }
 
+.btn-agregar-usuario {
+  float: right;
+  margin-top: 30px;
+}
+
+.btn-acciones {
+  float: right;
+}
 
 /* Estilos para el componenete Loading*/
 /* Absolute Center Spinner */
