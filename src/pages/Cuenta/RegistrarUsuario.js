@@ -36,8 +36,21 @@ const RegistrarUsuario = () => {
                             </ol>
                         </nav>
                         <h2 className="title">Registrar Nuevo Usuario</h2>
-
-
+                        <div className="row">
+                            <div className="col-md-6">
+                                <div className="input-group">
+                                    <div className="input-group-prepend">
+                                        <span className="input-group-text">
+                                            <i className="material-icons">mail</i>
+                                        </span>
+                                    </div>
+                                    <input
+                                        type="email"
+                                        className="form-control"
+                                        placeholder="Correo Electronico" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -2,19 +2,19 @@ import React, { useEffect, useState } from 'react';
 
 import * as firebase from 'firebase';
 
-import { Redirect, Link, useHistory } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 
 import NavBar from '../../components/NavBar';
 import Loading from '../../components/Loading';
 import ListaUsuarios from '../../components/Usuarios/ListaUsuarios';
+import Modal from '../../components/Modal';
 
 const Usuarios = () => {
 
-    const history = useHistory();
     const [autenticacion, setAutenticacion] = useState(null);
 
     useEffect(() => {
-        document.title = "Excelsis | Nuevo Usuario";
+        document.title = "Excelsis | Usuarios";
         firebase.auth().onAuthStateChanged((user) => {
             !user ? setAutenticacion(false) : setAutenticacion(true);
         });
@@ -24,11 +24,6 @@ const Usuarios = () => {
     if (autenticacion === null) return <Loading isVisible="loading" />;
 
     if (autenticacion === false) return <Redirect to={'/login'} />
-
-    const registrarNuevoUsuario = () => {
-        console.log("registrarNuevoUsuario");
-        history.push('/registrar-nuevo-usuario')
-    }
 
     return (
         <div className="index-page sidebar-collapse">
@@ -47,15 +42,12 @@ const Usuarios = () => {
                                 <h2 className="title">Todos Los Usuarios</h2>
                             </div>
                             <div className="col-md-4">
-                                <button 
+                                <button
                                     type="button"
                                     className="btn btn-info btn-agregar-usuario btn-round"
-                                    data-toggle="tooltip" 
-                                    data-placement="bottom" 
-                                    title="Agregar Nuevo Usuario"
-                                    data-container="body"
-                                    onClick={() => registrarNuevoUsuario()}>
-                                        Agregar <i className="material-icons">contacts</i>
+                                    data-toggle="modal"
+                                    data-target="#modalRegistroUsuario">
+                                    Agregar <i className="material-icons">contacts</i>
                                 </button>
                             </div>
                         </div>
@@ -64,6 +56,12 @@ const Usuarios = () => {
                     </div>
                 </div>
             </div>
+
+
+            {/** modal */}
+
+            <Modal isVisible='modalRegistroUsuario' />
+            
         </div>
     )
 }
