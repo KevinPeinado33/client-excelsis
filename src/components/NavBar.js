@@ -41,7 +41,7 @@ const NavBar = () => {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={'/login'} className="nav-link" >
+                            <Link to={'/mi-perfil'} className="nav-link" >
                                 <i className="material-icons">account_circle</i> Perfil
                             </Link>
                         </li>

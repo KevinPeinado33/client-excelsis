@@ -21,7 +21,7 @@ const Contactanos = () => {
                             <div className="col-md-12 ml-auto mr-auto">
                                 <div className="profile">
                                         <div className="name" style={{marginTop:20}}>
-                                            <h2 className="title">Contáctanos</h2>
+                                            <h2 className="title">Contáctanos y Ubicanos</h2>
                                         </div>
                                         <Contacto />
                                     </div>

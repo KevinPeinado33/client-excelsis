@@ -42,7 +42,7 @@ const ContactoForm = () => {
                                     <i className="material-icons">account_balance</i>
                                 </span>
                             </div>
-                            <textarea class="form-control" placeholder="Descripción De Su Problema o Necesidad" rows="4" />
+                            <textarea className="form-control" placeholder="Descripción De Su Problema o Necesidad" rows="4" />
                         </div>
                     </div>
                 </div>
